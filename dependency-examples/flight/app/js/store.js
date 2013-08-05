@@ -1,9 +1,10 @@
 /*global define */
 
-'use strict';
+
 
 define([
 	'depot'
 ], function (depot) {
+	'use strict';
 	return depot('todos', { idAttribute: 'id' });
 });

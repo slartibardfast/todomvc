@@ -1,9 +1,10 @@
 /*global define */
-'use strict';
 
 // tmpl function scooped from underscore.
 // http://documentcloud.github.com/underscore/#template
 define(function () {
+	'use strict';
+
 	var _ = {};
 
 	// List of HTML entities for escaping.

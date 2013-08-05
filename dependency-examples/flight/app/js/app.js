@@ -1,5 +1,5 @@
 /*global define */
-'use strict';
+
 
 define([
 	'./data/todos',
@@ -10,6 +10,7 @@ define([
 	'./ui/main_selector',
 	'./ui/toggle_all'
 ], function (TodosData, StatsData, NewItemUI, TodoListUI, StatsUI, MainSelectorUI, ToggleAllUI) {
+	'use strict';
 	var initialize = function () {
 		StatsData.attachTo(document);
 		TodosData.attachTo(document);

@@ -1,8 +1,11 @@
 /*global define, $ */
-'use strict';
 
 define(function () {
+	'use strict';
+
 	return function withFilters() {
+		/*jshint validthis: true */
+
 		this.defaultAttrs({
 			filterSelector: '#filters a'
 		});

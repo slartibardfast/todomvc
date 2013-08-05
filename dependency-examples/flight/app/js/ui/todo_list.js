@@ -1,12 +1,14 @@
 /*global define, $ */
-'use strict';
 
 define([
 	'flight/component',
 	'text!app/templates/todo.html',
 	'../utils'
 ], function (defineComponent, todoTmpl, utils) {
+	'use strict';
+
 	function todoList() {
+		/*jshint validthis: true */
 		var ENTER_KEY = 13;
 		var template = utils.tmpl(todoTmpl);
 

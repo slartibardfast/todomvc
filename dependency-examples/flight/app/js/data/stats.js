@@ -1,11 +1,13 @@
 /*global define */
-'use strict';
 
 define([
 	'flight/component',
 	'../store'
 ], function (defineComponent, dataStore) {
+	'use strict';
+
 	function stats() {
+		/*jshint validthis: true */
 		this.recount = function () {
 			var todos = dataStore.all();
 			var all = todos.length;

@@ -1,5 +1,4 @@
 /*global define */
-'use strict';
 
 define([
 	'flight/component',
@@ -7,7 +6,10 @@ define([
 	'text!app/templates/stats.html',
 	'../utils'
 ], function (defineComponent, withFilters, statsTmpl, utils) {
+	'use strict';
+
 	function stats() {
+		/*jshint validthis: true */
 		var template = utils.tmpl(statsTmpl);
 
 		this.defaultAttrs({

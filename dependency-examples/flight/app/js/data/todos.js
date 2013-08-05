@@ -1,11 +1,13 @@
 /*global define */
-'use strict';
 
 define([
 	'flight/component',
 	'../store'
 ], function (defineComponent, dataStore) {
+	'use strict';
+
 	function todos() {
+		/*jshint validthis: true */
 		var filter;
 
 		this.add = function (e, data) {

@@ -1,10 +1,12 @@
 /*global define */
-'use strict';
 
 define([
 	'flight/component'
 ], function (defineComponent) {
+	'use strict';
+
 	function toggleAll() {
+		/*jshint validthis: true */
 		this.toggleAllComplete = function () {
 			this.trigger('uiToggleAllRequested', {
 				completed: this.$node.is(':checked')

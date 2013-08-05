@@ -1,10 +1,11 @@
 /*global define */
-'use strict';
-
 define([
 	'flight/component'
 ], function (defineComponent) {
+	'use strict'; 
+
 	function newItem() {
+		/*jshint validthis: true */
 		var ENTER_KEY = 13;
 
 		this.createOnEnter = function (e) {
