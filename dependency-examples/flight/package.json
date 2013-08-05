@@ -1,0 +1,11 @@
+{
+  "name": "flight",
+  "version": "0.0.1",
+  "description": "> Flight is a lightweight, component-based JavaScript framework that maps behavior to DOM nodes.",
+  "author": "Copyright (c) Addy Osmani, Sindre Sorhus & Pascal Hartig",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.2"
+  }
+}
