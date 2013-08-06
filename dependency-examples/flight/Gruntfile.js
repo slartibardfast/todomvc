@@ -6,9 +6,16 @@ module.exports = function(grunt) {
           options: { "browser" : true
                    }
         }
+    watch: {
+      scripts: {
+      files: ['app/js/**/*.js'],
+      tasks: ['jshint'],
+      },
+    },
   });
  
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', ['jshint']);
 };
